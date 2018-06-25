@@ -1,7 +1,107 @@
 // Place all the styles related to the simple_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-#logo {
-    height: 200px;
-    width: 50%;
+
+// start of body template
+Body {
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    font-family: Verdama, Helvetica, Arial, serif;
+    font-weight: 100;
+    text-shadow: 1px 1px black; 
+    
 }
+h1, h2, h3 {
+    color: white;
+    font-weight: 100;
+    text-shadow: 2px 2px black;
+    font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+}
+h4 {
+    font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif; 
+}
+
+#logo {
+    height: 2.75em;
+    width: auto;
+    display: block;
+    float: left;
+    background-color: black;
+    padding-left: auto;
+    padding-right: auto;
+    
+}
+// start of nav
+.nav { 
+  text-decoration: none;
+  float: center;
+  display: block;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  text-align: right;
+  padding-right: 2em;
+  padding-left: 2em;
+  background-color: black;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  
+}
+// end of nav
+// end of body template
+// start of content template
+#content {
+  background-image: url("office.jpg");
+  text-align: center;
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+}
+
+// end of content template
+// start all pages
+.home,
+.contact,
+.about {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+// end all pages
+// start home
+.home {
+  background: rgba(30, 30, 30, 0.6);
+}
+.home h2 {
+  padding-bottom: 5%;
+}
+#devcloud {
+  display: block;
+  margin: auto;
+  width: 80%;
+  height: auto;
+  padding-right: 10%;
+  padding-left: 10%;
+  border-radius: 5%;
+}
+// end home
+// start contact
+.contact {
+  background: rgba(30, 30, 30, 0.6);
+}
+// end of contact
+// start of about
+.about{
+  background: rgba(30, 30, 30, 0.6);
+}
+// end of about
+// start of footer
+footer p {
+    margin: 0%;
+    background-color: black;
+    margin-left: -1%;
+    margin-right: -1%;
+    text-align: center;
+}
+// end of footer
