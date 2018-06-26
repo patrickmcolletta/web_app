@@ -26,23 +26,36 @@
   <!--My CSS-->
 </head>
 <body>
- 
-    <div id="logo">
-      <%= image_tag("logo.jpg", class: "img-responsive", id: "logo") %>
-    </div>
-  <div class = nav>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     
-     <%= link_to "Home", root_path %>
+    <div class = "container-fluid" id= "navLinks">
+    
+      <%= link_to "Home", root_path %>
+      <%= link_to "Shop", simple_pages_shop_path %>
+      <%= link_to "Blog", simple_pages_blog_path %>
       <%= link_to "About", simple_pages_about_path %>
       <%= link_to "Contact", simple_pages_contact_path %>
-  </div>
+      <%= link_to "Login", simple_pages_login_path %>
+      
+    </div>
+</nav>
    <div id="content">
-  
+     <div class="container-fluid" id= "billBoard">
+        <h1 style="padding-top: 2%;">Name of store</h1>
+        <h2 style="padding-top: 1%; padding-bottom: 1% ">Slogan</h2>
+        </div>
     <%= yield %>
- 
-  </div>
+    
+    </div>
+    
+ <div class="container-fluid" id= "footerInfo">
+        <p style="padding-top: 2%;">Contact Info:</p>
+        <p style="padding-bottom: 2%;">Disclosures and Notices:</p>
+        </div>
+  
+  
   <footer>
-    <p>&copy; 2018 Patrick Colletta</p>
+    <p>&copy; 2018 Patrick M. Colletta</p>
   </footer>
    
 

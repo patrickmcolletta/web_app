@@ -4,96 +4,113 @@
 
 // start of body template
 Body {
-    
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: white;
+    color: black;
     font-family: Verdama, Helvetica, Arial, serif;
     font-weight: 100;
-    text-shadow: 1px 1px black; 
-    
 }
 h1, h2, h3 {
-    color: white;
+    color: black;
     font-weight: 100;
-    text-shadow: 2px 2px black;
     font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
 }
 h4 {
     font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif; 
 }
 
-#logo {
-    height: 2.75em;
-    width: auto;
-    display: block;
-    float: left;
-    background-color: black;
-    padding-left: auto;
-    padding-right: auto;
-    
-}
 // start of nav
-.nav { 
+.navbar { 
   text-decoration: none;
   float: center;
   display: block;
   padding-top: 0.75em;
   padding-bottom: 0.75em;
   text-align: right;
-  padding-right: 2em;
-  padding-left: 2em;
+  padding-right: 25%;
+  padding-left: 25%;
   background-color: black;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   
 }
+#navLinks a:hover {
+    color:#58ACFA;
+    text-shadow: 2px 2px black;
+ }
+ #navLinks a {
+    color:	white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: color 600ms;
+    -webkit-transition: color 600ms;
+}
+#navLinks .navbar-nav> .active> a {
+    color:#58ACFA;
+    text-shadow: 3px 2px black;
+}
 // end of nav
 // end of body template
 // start of content template
 #content {
-  background-image: url("office.jpg");
+  background: linear-gradient(silver, white);
   text-align: center;
   width: 100%;
   height: auto;
   background-repeat: no-repeat;
+  
+}
+#billBoard {
+  padding: 0px;
+  background-image: url("woodTextureBanner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-style: solid;
+  border-width: 2px;
+}
+#billboard, h1, h2 {
+  color: white;
+  text-shadow: 2px 2px black;
 }
 
 // end of content template
 // start all pages
 .home,
 .contact,
-.about {
-  padding-top: 5%;
+.about,
+.shop,
+.blog {
+  padding-top: 0%;
   padding-bottom: 5%;
+}
+
+.discription {
+  padding-top: 2%;
 }
 // end all pages
 // start home
-.home {
-  background: rgba(30, 30, 30, 0.6);
+.homeImg h3 {
+  padding-top: 10%;
 }
 .home h2 {
-  padding-bottom: 5%;
+  padding-bottom: 0%;
 }
-#devcloud {
-  display: block;
-  margin: auto;
+.img-responsive {
   width: 80%;
   height: auto;
-  padding-right: 10%;
-  padding-left: 10%;
-  border-radius: 5%;
+  padding-top: 1%;
+  padding-bottom: 2%;
+  margin: 0px;
 }
 // end home
 // start contact
 .contact {
-  background: rgba(30, 30, 30, 0.6);
+  
 }
 // end of contact
 // start of about
 .about{
-  background: rgba(30, 30, 30, 0.6);
+  
 }
 // end of about
 // start of footer
@@ -103,5 +120,22 @@ footer p {
     margin-left: -1%;
     margin-right: -1%;
     text-align: center;
+    color: white;
 }
+#footerInfo {
+  padding: 0px;
+  background-image: url("woodTextureBanner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-style: solid;
+  border-width: 2px;
+  padding-left: 5%;
+}
+#footerInfo p {
+  color: white;
+  text-shadow: 2px 2px black;
+}  
+
+
 // end of footer
