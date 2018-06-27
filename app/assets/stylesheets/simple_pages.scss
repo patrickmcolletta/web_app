@@ -143,6 +143,11 @@ footer p {
 #carouselExampleIndicators {
   padding-bottom: 5%;
 }
+.carousel-inner, img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .gallery {
     border: 1px solid #ccc;
 }
