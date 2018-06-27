@@ -1,43 +1,97 @@
 
 <div class="home">
-    
-        <p style="padding-top: 2%;">Featured Products</p>
-        <p>Pharagraph about featured products</p>
-   
-        <div class= "container-fluid" id= "productLines">
-        <div class="row" id="work">
-            <div class="col-md-4">
-            <div class="homeImg">
-                <h3>Title</h3>
-                <%= image_tag("webdevcloud.jpg", class: "img-responsive", id: "productLine1") %>
-                <p><a type="button" class="btn btn-primary"  href="#portfolio" data-toggle="item3" data-placement="bottom" title="Go to portfolio">View More &raquo;</a></p>
-                <p>Description of products here.</p>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style = "padding-top: 5%" >
+          <div class="carousel-inner"  >
+            <div class="carousel-item active">
+                <%= image_tag("shirt1.jpg", class:"d-block w-25", id: "productLine1", alt:"First Slide", style:"margin: auto")%>
             </div>
-            <!--end of img-->
-           </div>
-            <!--end of col-->
-            <div class="col-md-4">
-            <div class="homeImg">
-                <h3>Title</h3>
-                <%= image_tag("webdevcloud.jpg", class: "img-responsive", id: "productLine2") %>
-                <p><a type="button" class="btn btn-primary"  href="#portfolio" data-toggle="item3" data-placement="bottom" title="Go to portfolio">View More &raquo;</a></p>
-                <p>Description of products here.</p>
+            <div class="carousel-item">
+                <%= image_tag("shirt2.jpg", class:"d-block w-25", id: "productLine1", alt:"Second Slide", style:"margin: auto")%>
             </div>
-            <!--end of img-->
+            <div class="carousel-item">
+                <%= image_tag("shirt3.jpg", class:"d-block w-25", id: "productLine1", alt:"Third Slide", style:"margin: auto")%>
             </div>
-            <!--end of col-->
-            <div class="col-md-4">
-            <div class="homeImg">
-                <h3>Title</h3>
-                <%= image_tag("webdevcloud.jpg", class: "img-responsive", id: "productLine3") %>
-                <p><a type="button" class="btn btn-primary"  href="#portfolio" data-toggle="item3" data-placement="bottom" title="Go to portfolio">View More &raquo;</a></p>
-                <p>Description of products here.</p>
+            <div class="carousel-item">
+                <%= image_tag("shirt4.jpg", class:"d-block w-25", id: "productLine1", alt:"Fourth Slide", style:"margin: auto")%>
             </div>
-            <!--end of img-->
-           </div>
-            <!--end of col-->
           </div>
-            <!--end of row-->
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" style="background-color:silver">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" style="background-color:silver">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="/assets/shirt1.jpg">
+        <%= image_tag("shirt1.jpg", class: "img-responsive", id: "productLine1", alt:"Mountains",  width:"600", height:"400")%>
+      <!--<img src="img_5terre.jpg" alt="Cinque Terre" width="300" height="200">-->
+    </a>
+    <div class="desc">
+        100% Polyester</br>
+        New Ultimate Fit</br>
+        Textured Fabric is Soft, Light and Breathable</br>
+        Material Wicks Sweat and Dries Really Fast, Anti-Odor Technology</br>
+        Mesh Insets on Sleeve Cuffs for Added Breathability
+    </div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="/assets/shirt2.jpg">
+        <%= image_tag("shirt2.jpg", class: "img-responsive", id: "productLine1", alt:"Mountains",  width:"600", height:"400")%>
+      <!--<img src="img_forest.jpg" alt="Forest" width="600" height="400">-->
+    </a>
+    <div class="desc">
+        100% Polyester</br>
+        New Ultimate Fit</br>
+        Textured Fabric is Soft, Light and Breathable</br>
+        Material Wicks Sweat and Dries Really Fast, Anti-Odor Technology</br>
+        Mesh Insets on Sleeve Cuffs for Added Breathability
+    </div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="/assets/shirt3.jpg">
+        <%= image_tag("shirt3.jpg", class: "img-responsive", id: "productLine1", alt:"Mountains",  width:"600", height:"400")%>
+      <!--<img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">-->
+    </a>
+    <div class="desc">
+        100% Polyester</br>
+        New Ultimate Fit</br>
+        Textured Fabric is Soft, Light and Breathable</br>
+        Material Wicks Sweat and Dries Really Fast, Anti-Odor Technology</br>
+        Mesh Insets on Sleeve Cuffs for Added Breathability
+    </div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="/assets/shirt4.jpg">
+        <%= image_tag("shirt4.jpg", class: "img-responsive", id: "productLine1", alt:"Mountains",  width:"600", height:"400")%>
+      <!--<img src="webdevcloud.jpg" alt="Mountains" width="600" height="400">-->
+    </a>
+    <div class="desc">
+        100% Polyester</br>
+        New Ultimate Fit</br>
+        Textured Fabric is Soft, Light and Breathable</br>
+        Material Wicks Sweat and Dries Really Fast, Anti-Odor Technology</br>
+        Mesh Insets on Sleeve Cuffs for Added Breathability
+    </div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+</div>
+       
 
 
 
